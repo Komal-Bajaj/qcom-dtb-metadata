@@ -13,16 +13,32 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/qcm6490-idp.dtb");
 			type = "flat_dt";
 		};
+		fdt-qcm6490-idp-el2.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/qcm6490-idp-el2.dtb");
+			type = "flat_dt";
+		};
 		fdt-qcs6490-rb3gen2.dtb {
 			data = /incbin/("./arch/arm64/boot/dts/qcom/qcs6490-rb3gen2.dtb");
+			type = "flat_dt";
+		};
+		fdt-qcs6490-rb3gen2-el2.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/qcs6490-rb3gen2-el2.dtb");
 			type = "flat_dt";
 		};
 		fdt-qcs6490-rb3gen2-vision-mezzanine.dtb {
 			data = /incbin/("./arch/arm64/boot/dts/qcom/qcs6490-rb3gen2-vision-mezzanine.dtb");
 			type = "flat_dt";
 		};
+		fdt-qcs6490-rb3gen2-vision-mezzanine-el2.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/qcs6490-rb3gen2-vision-mezzanine-el2.dtb");
+			type = "flat_dt";
+		};
 		fdt-qcs6490-rb3gen2-industrial-mezzanine.dtb {
 			data = /incbin/("./arch/arm64/boot/dts/qcom/qcs6490-rb3gen2-industrial-mezzanine.dtb");
+			type = "flat_dt";
+		};
+		fdt-qcs6490-rb3gen2-industrial-mezzanine-el2.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/qcs6490-rb3gen2-industrial-mezzanine-el2.dtb");
 			type = "flat_dt";
 		};
 		fdt-qcs6490-rb3gen2-industrial-mezzanine-bt-uart.dtb {
@@ -81,6 +97,10 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/talos-evk.dtb");
 			type = "flat_dt";
 		};
+		fdt-talos-evk-el2.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/talos-evk-el2.dtb");
+			type = "flat_dt";
+		};
 		fdt-talos-evk-lvds-auo,g133han01.dtb {
 			data = /incbin/("./arch/arm64/boot/dts/qcom/talos-evk-lvds-auo,g133han01.dtb");
 			type = "flat_dt";
@@ -127,18 +147,6 @@
 		};
 		fdt-sa8775p-ride-camx.dtbo {
 			data = /incbin/("./arch/arm64/boot/dts/qcom/sa8775p-ride-camx.dtbo");
-			type = "flat_dt";
-		};
-		fdt-lemans-el2.dtbo {
-			data = /incbin/("./arch/arm64/boot/dts/qcom/lemans-el2.dtbo");
-			type = "flat_dt";
-		};
-		fdt-monaco-el2.dtbo {
-			data = /incbin/("./arch/arm64/boot/dts/qcom/monaco-el2.dtbo");
-			type = "flat_dt";
-		};
-		fdt-talos-el2.dtbo {
-			data = /incbin/("./arch/arm64/boot/dts/qcom/talos-el2.dtbo");
 			type = "flat_dt";
 		};
 		fdt-lemans-camx-el2.dtbo {
@@ -220,10 +228,6 @@
 		};
 		fdt-glymur-crd-camx.dtbo {
 			data = /incbin/("./arch/arm64/boot/dts/qcom/glymur-crd-camx.dtbo");
-			type = "flat_dt";
-		};
-		fdt-kodiak-el2.dtbo {
-			data = /incbin/("./arch/arm64/boot/dts/qcom/kodiak-el2.dtbo");
 			type = "flat_dt";
 		};
 		fdt-qcs5430-fps-camx.dtbo {
@@ -331,7 +335,7 @@
 		};
 		conf-20 {
 			compatible = "qcom,qcs9075-iot-el2kvm";
-			fdt = "fdt-lemans-evk.dtb", "fdt-lemans-evk-camera-csi1-imx577.dtbo", "fdt-lemans-el2.dtbo";
+			fdt = "fdt-lemans-evk-el2.dtb", "fdt-lemans-evk-camera-csi1-imx577.dtbo";
 		};
 		conf-21 {
 			compatible = "qcom,qcs9100-qam-el2kvm";
@@ -355,7 +359,7 @@
 		};
 		conf-26 {
 			compatible = "qcom,qcs8275-iot-el2kvm";
-			fdt = "fdt-monaco-evk.dtb", "fdt-monaco-evk-camera-imx577.dtbo", "fdt-monaco-el2.dtbo";
+			fdt = "fdt-monaco-evk-el2.dtb", "fdt-monaco-evk-camera-imx577.dtbo";
 		};
 		conf-27 {
 			compatible = "qcom,qcs8275-iot-camx-el2kvm";
@@ -363,7 +367,7 @@
 		};
 		conf-28 {
 			compatible = "qcom,qcs8300-adp-camx-el2kvm";
-			fdt = "fdt-qcs8300-ride.dtb", "fdt-qcs8300-ride-camx.dtbo", "fdt-monaco-el2.dtbo", "fdt-monaco-camx-el2.dtbo";
+			fdt = "fdt-qcs8300-ride-el2.dtb", "fdt-qcs8300-ride-camx.dtbo", "fdt-monaco-camx-el2.dtbo";
 		};
 		conf-29 {
 			compatible = "qcom,glymur-crd";
@@ -451,31 +455,31 @@
 		};
 		conf-50 {
 			compatible = "qcom,qcs6490-iot-el2kvm";
-			fdt = "fdt-qcs6490-rb3gen2.dtb", "fdt-kodiak-el2.dtbo";
+			fdt = "fdt-qcs6490-rb3gen2-el2.dtb";
 		};
 		conf-51 {
 			compatible = "qcom,qcs6490-iot-subtype2-el2kvm";
-			fdt = "fdt-qcs6490-rb3gen2-vision-mezzanine.dtb", "fdt-kodiak-el2.dtbo";
+			fdt = "fdt-qcs6490-rb3gen2-vision-mezzanine-el2.dtb";
 		};
 		conf-52 {
 			compatible = "qcom,qcs6490-iot-subtype9-el2kvm";
-			fdt = "fdt-qcs6490-rb3gen2-industrial-mezzanine.dtb", "fdt-kodiak-el2.dtbo";
+			fdt = "fdt-qcs6490-rb3gen2-industrial-mezzanine-el2.dtb";
 		};
 		conf-53 {
 			compatible = "qcom,qcs5430-iot-camx-el2kvm";
-			fdt = "fdt-qcs6490-rb3gen2.dtb", "fdt-qcs5430-fps-camx.dtbo", "fdt-kodiak-el2.dtbo";
+			fdt = "fdt-qcs6490-rb3gen2-el2.dtb", "fdt-qcs5430-fps-camx.dtbo";
 		};
 		conf-54 {
 			compatible = "qcom,qcs5430-iot-subtype2-camx-el2kvm";
-			fdt = "fdt-qcs6490-rb3gen2-vision-mezzanine.dtb", "fdt-qcs5430-fps-camx.dtbo", "fdt-kodiak-el2.dtbo";
+			fdt = "fdt-qcs6490-rb3gen2-vision-mezzanine-el2.dtb", "fdt-qcs5430-fps-camx.dtbo";
 		};
 		conf-55 {
 			compatible = "qcom,qcs6490-iot-camx-el2kvm";
-			fdt = "fdt-qcs6490-rb3gen2.dtb", "fdt-qcs6490-rb3gen2-vision-mezzanine-camx.dtbo", "fdt-kodiak-el2.dtbo";
+			fdt = "fdt-qcs6490-rb3gen2-el2.dtb", "fdt-qcs6490-rb3gen2-vision-mezzanine-camx.dtbo";
 		};
 		conf-56 {
 			compatible = "qcom,qcs6490-iot-subtype2-camx-el2kvm";
-			fdt = "fdt-qcs6490-rb3gen2-vision-mezzanine.dtb", "fdt-qcs6490-rb3gen2-vision-mezzanine-camx.dtbo", "fdt-kodiak-el2.dtbo";
+			fdt = "fdt-qcs6490-rb3gen2-vision-mezzanine-el2.dtb", "fdt-qcs6490-rb3gen2-vision-mezzanine-camx.dtbo";
 		};
 		conf-57 {
 			compatible = "qcom,glymur-crd-staging";
