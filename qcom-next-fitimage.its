@@ -295,7 +295,7 @@
 		};
 		conf-10 {
 			compatible = "qcom,qcs615-adp";
-			fdt = "fdt-qcs615-ride.dtb";
+			fdt = "fdt-qcs615-ride-el2.dtb";
 		};
 		conf-11 {
 			compatible = "qcom,hamoa-evk";
@@ -327,7 +327,7 @@
 		};
 		conf-18 {
 			compatible = "qcom,qcs615-iot";
-			fdt = "fdt-talos-evk.dtb";
+			fdt = "fdt-talos-evk-el2.dtb";
 		};
 		conf-19 {
 			compatible = "qcom,qcs615-iot-subtype6";
@@ -374,8 +374,8 @@
 			fdt = "fdt-glymur-crd.dtb";
 		};
 		conf-30 {
-			compatible = "qcom,qcs615-adp-el2kvm";
-			fdt = "fdt-qcs615-ride-el2.dtb";
+			compatible = "qcom,qcs615-adp-el2gh";
+			fdt = "fdt-qcs615-ride.dtb";
 		};
 		conf-31 {
 			compatible = "qcom,hamoa-evk-el2kvm";
