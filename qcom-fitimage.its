@@ -73,6 +73,10 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/hawi-mtp.dtb");
 			type = "flat_dt";
 		};
+		fdt-kalambo-crd.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/kalambo-crd.dtb");
+			type = "flat_dt";
+		};
 	};
 
 	configurations {
@@ -139,6 +143,10 @@
 		conf-18 {
 			compatible = "qcom,hawi-mtp";
 			fdt = "fdt-hawi-mtp.dtb";
+		};
+		conf-19 {
+			compatible = "qcom,kalambo-crd";
+			fdt = "fdt-kalambo-crd.dtb";
 		};
 	};
 };
